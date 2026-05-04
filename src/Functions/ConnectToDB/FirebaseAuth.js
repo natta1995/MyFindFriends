@@ -1,3 +1,5 @@
+ import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../../firebase";
 import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword

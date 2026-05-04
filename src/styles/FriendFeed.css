@@ -1,0 +1,60 @@
+.profile-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.friend-profile-card {
+	border: dotted 2px #ea580c ;
+	margin: 1rem;
+	padding: 2rem;
+}
+.button {
+	background-color: #ea580c;
+	margin-top: 1rem;
+	padding: 1rem;
+	border-radius: 17%;
+	border: none;
+}
+.profile-info p {
+  margin: 0;
+  font-size: 15px;
+  color: #374151;
+}
+
+/* Sektioner */
+.profile-box {
+  background: #f9fafb;
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid #f1f5f9;
+}
+
+/* Rubriker */
+.profile-box strong {
+  display: block;
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+/* Intressen */
+.interest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.interest-pill {
+  background: #fff7ed;
+  color: #ea580c;
+  border: 1px solid #fed7aa;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.friend-header {
+	text-align: center;
+}

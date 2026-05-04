@@ -1,15 +1,24 @@
-import { useState } from "react";
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { handleLogin } from "../Functions/ConnectToDB/FirebaseAuth";
 import { Link } from "react-router-dom";
 import "../styles/Auth.css";
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+	const [email, setEmail] = useState("")
+	const [password, setPassword] = useState("")
+	const navigate = useNavigate()
+// 	const login = async () => {
+//    await  handleLogin(email, password) 
+//    navigate("/home")}
+
+	
+
 
   const login = async (e) => {
     e.preventDefault();
     await handleLogin(email, password);
+	   navigate("/home")
   };
 
   return (
