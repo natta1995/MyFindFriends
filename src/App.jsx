@@ -1,7 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
+import Login from './Pages/Login'
 
-function Login() {
-  return <h1>Home</h1>
+function login() {
+  return <Login />
 }
 
 
