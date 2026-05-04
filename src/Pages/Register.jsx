@@ -21,6 +21,8 @@ const [interests, setInterests] = useState([]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+	console.log(typeof(age));
+	
 
     const user = await handleRegister(email, password, fullname, city);
 
