@@ -1,14 +1,7 @@
-import { Routes, Route } from 'react-router-dom'
-import Login from './Pages/Login'
+import { Routes, Route } from 'react-router-dom';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
 
-function login() {
-  return <Login />
-}
-
-
-function Register() {
-  return <h1>Register</h1>
-}
 
 
 function Home() {
