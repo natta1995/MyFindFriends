@@ -12,7 +12,7 @@ const Register = () => {
 const [fullname, setFullname] = useState("");
 const [city, setCity] = useState("");
 const [bio, setBio] = useState("");
-const [age, setAge] = useState("");
+const [age, setAge] = useState(0);
 const [ageSpan, setAgeSpan] = useState([0, 0]);
 const [lonely, setLonely] = useState(false);
 const [interests, setInterests] = useState([]);
