@@ -1,11 +1,10 @@
- import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../../firebase";
+
 import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword
 } from "firebase/auth";
 
-import { auth, db } from "../../firebase";
+import { auth, db } from "../../../firebase";
 import { doc, setDoc } from "firebase/firestore";
 
 export const handleLogin = async (email, password) => {
@@ -22,6 +21,30 @@ export const handleLogin = async (email, password) => {
   }
 };
 
+// export const handleRegister = async (email, password, fullname, city) => {
+//   try {
+//     const userCredential = await createUserWithEmailAndPassword(
+//       auth,
+//       email,
+//       password
+//     );
+
+//     const user = userCredential.user;
+
+//     await setDoc(doc(db, "User", user.uid), {
+//       Fullname: fullname,
+//       City: city,
+//       Email: user.email,
+//       CreatedAt: new Date()
+//     });
+
+//     console.log("User created + saved!");
+
+//     return user;
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };
 export const handleRegister = async (email, password, fullname, city) => {
   try {
     const userCredential = await createUserWithEmailAndPassword(
@@ -32,10 +55,14 @@ export const handleRegister = async (email, password, fullname, city) => {
 
     const user = userCredential.user;
 
-    await setDoc(doc(db, "Users", user.uid), {
+    await setDoc(doc(db, "User", user.uid), {
       Fullname: fullname,
       City: city,
-      Email: user.email,
+      Bio: "",
+      Age: 0,
+      AgeSpan: [0],
+      Lonely: false,
+      interests: [],
       CreatedAt: new Date()
     });
 
