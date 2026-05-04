@@ -1,5 +1,5 @@
  import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebase";
+import { auth } from "../../../firebase";
 export const handleLogin = async (email, password) => {
     try {
       await signInWithEmailAndPassword(auth, email, password);

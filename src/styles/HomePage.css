@@ -1,0 +1,71 @@
+.home-layout {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fff7ed, #f8fafc);
+  padding: 20px;
+  font-family: system-ui, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.header p:first-child {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.header p:last-child {
+  font-size: 14px;
+  color: #ea580c;
+  font-weight: 600;
+}
+
+
+.button-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+
+.button-layout button {
+  height: 120px;
+  border-radius: 24px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  background: white;
+  color: #1f2937;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.15s ease;
+}
+
+.button-layout button:active {
+  transform: scale(0.97);
+}
+
+.button-layout button:hover {
+  background: #fff7ed;
+}
+
+
+.button-layout button:first-child {
+  background: linear-gradient(135deg, #fb923c, #f97316);
+  color: white;
+}
+
+
+.button-layout button span {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 6px;
+}
